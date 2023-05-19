@@ -16,5 +16,19 @@ namespace pryPonceDeLeonGestion
         {
             InitializeComponent();
         }
+
+        private void btnRegistrar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmRegistrar f = new frmRegistrar();
+            f.ShowDialog();
+        }
+
+        private void btnMostrar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmMostrar f = new frmMostrar();
+            f.ShowDialog();
+        }
     }
 }
