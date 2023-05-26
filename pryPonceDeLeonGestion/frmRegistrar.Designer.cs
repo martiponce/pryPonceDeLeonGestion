@@ -28,247 +28,243 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegistrar));
+            this.btnCancelarRegistro = new System.Windows.Forms.Button();
+            this.chkDebate = new System.Windows.Forms.CheckBox();
+            this.chkNotasReunion = new System.Windows.Forms.CheckBox();
+            this.chkInvestigacion = new System.Windows.Forms.CheckBox();
+            this.chkRepositorio = new System.Windows.Forms.CheckBox();
+            this.btnRegistrarRegistro = new System.Windows.Forms.Button();
+            this.gboxTareas = new System.Windows.Forms.GroupBox();
+            this.optNoReunion = new System.Windows.Forms.RadioButton();
+            this.optSiReunion = new System.Windows.Forms.RadioButton();
+            this.gboxReunion = new System.Windows.Forms.GroupBox();
+            this.lblDetalleDeActividad = new System.Windows.Forms.Label();
+            this.cboTipoDeActividad = new System.Windows.Forms.ComboBox();
+            this.dtpFechaDeRegistro = new System.Windows.Forms.DateTimePicker();
+            this.lblTipoDeActividad = new System.Windows.Forms.Label();
+            this.txtDetalleActividad = new System.Windows.Forms.TextBox();
+            this.lblFechaDeRegistro = new System.Windows.Forms.Label();
+            this.gboxTareas.SuspendLayout();
+            this.gboxReunion.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label5
+            // btnCancelarRegistro
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(219, 433);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(158, 13);
-            this.label5.TabIndex = 23;
-            this.label5.Text = "Grabar la seleccion en variables";
+            this.btnCancelarRegistro.BackColor = System.Drawing.SystemColors.Info;
+            this.btnCancelarRegistro.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelarRegistro.Location = new System.Drawing.Point(194, 378);
+            this.btnCancelarRegistro.Name = "btnCancelarRegistro";
+            this.btnCancelarRegistro.Size = new System.Drawing.Size(85, 29);
+            this.btnCancelarRegistro.TabIndex = 21;
+            this.btnCancelarRegistro.Text = "Cancelar";
+            this.btnCancelarRegistro.UseVisualStyleBackColor = false;
+            this.btnCancelarRegistro.Click += new System.EventHandler(this.btnCancelarRegistro_Click);
             // 
-            // button1
+            // chkDebate
             // 
-            this.button1.Location = new System.Drawing.Point(479, 373);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 21;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.chkDebate.AutoSize = true;
+            this.chkDebate.Location = new System.Drawing.Point(178, 56);
+            this.chkDebate.Name = "chkDebate";
+            this.chkDebate.Size = new System.Drawing.Size(78, 25);
+            this.chkDebate.TabIndex = 3;
+            this.chkDebate.Text = "Debate";
+            this.chkDebate.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // chkNotasReunion
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(131, 56);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(61, 17);
-            this.checkBox4.TabIndex = 3;
-            this.checkBox4.Text = "Debate";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.chkNotasReunion.AutoSize = true;
+            this.chkNotasReunion.Location = new System.Drawing.Point(27, 56);
+            this.chkNotasReunion.Name = "chkNotasReunion";
+            this.chkNotasReunion.Size = new System.Drawing.Size(128, 25);
+            this.chkNotasReunion.TabIndex = 2;
+            this.chkNotasReunion.Text = "Notas reunión";
+            this.chkNotasReunion.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // chkInvestigacion
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(31, 56);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(92, 17);
-            this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "Notas reuniòn";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.chkInvestigacion.AutoSize = true;
+            this.chkInvestigacion.Location = new System.Drawing.Point(178, 33);
+            this.chkInvestigacion.Name = "chkInvestigacion";
+            this.chkInvestigacion.Size = new System.Drawing.Size(120, 25);
+            this.chkInvestigacion.TabIndex = 1;
+            this.chkInvestigacion.Text = "Investigación";
+            this.chkInvestigacion.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // chkRepositorio
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(131, 33);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(89, 17);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "Investigación";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.chkRepositorio.AutoSize = true;
+            this.chkRepositorio.Location = new System.Drawing.Point(27, 33);
+            this.chkRepositorio.Name = "chkRepositorio";
+            this.chkRepositorio.Size = new System.Drawing.Size(109, 25);
+            this.chkRepositorio.TabIndex = 0;
+            this.chkRepositorio.Text = "Repositorio";
+            this.chkRepositorio.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // btnRegistrarRegistro
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(31, 33);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(79, 17);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Repositorio";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.btnRegistrarRegistro.BackColor = System.Drawing.SystemColors.Info;
+            this.btnRegistrarRegistro.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrarRegistro.Location = new System.Drawing.Point(94, 378);
+            this.btnRegistrarRegistro.Name = "btnRegistrarRegistro";
+            this.btnRegistrarRegistro.Size = new System.Drawing.Size(77, 29);
+            this.btnRegistrarRegistro.TabIndex = 22;
+            this.btnRegistrarRegistro.Text = "Registar";
+            this.btnRegistrarRegistro.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // gboxTareas
             // 
-            this.button2.Location = new System.Drawing.Point(398, 373);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 22;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.gboxTareas.Controls.Add(this.chkDebate);
+            this.gboxTareas.Controls.Add(this.chkNotasReunion);
+            this.gboxTareas.Controls.Add(this.chkInvestigacion);
+            this.gboxTareas.Controls.Add(this.chkRepositorio);
+            this.gboxTareas.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gboxTareas.Location = new System.Drawing.Point(28, 255);
+            this.gboxTareas.Name = "gboxTareas";
+            this.gboxTareas.Size = new System.Drawing.Size(306, 106);
+            this.gboxTareas.TabIndex = 20;
+            this.gboxTareas.TabStop = false;
+            this.gboxTareas.Text = "Tareas";
             // 
-            // groupBox2
+            // optNoReunion
             // 
-            this.groupBox2.Controls.Add(this.checkBox4);
-            this.groupBox2.Controls.Add(this.checkBox3);
-            this.groupBox2.Controls.Add(this.checkBox2);
-            this.groupBox2.Controls.Add(this.checkBox1);
-            this.groupBox2.Location = new System.Drawing.Point(165, 242);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(317, 100);
-            this.groupBox2.TabIndex = 20;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Tareas";
+            this.optNoReunion.AutoSize = true;
+            this.optNoReunion.Location = new System.Drawing.Point(27, 60);
+            this.optNoReunion.Name = "optNoReunion";
+            this.optNoReunion.Size = new System.Drawing.Size(49, 25);
+            this.optNoReunion.TabIndex = 1;
+            this.optNoReunion.TabStop = true;
+            this.optNoReunion.Text = "No";
+            this.optNoReunion.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // optSiReunion
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(41, 62);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(39, 17);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "No";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.optSiReunion.AutoSize = true;
+            this.optSiReunion.Location = new System.Drawing.Point(27, 27);
+            this.optSiReunion.Name = "optSiReunion";
+            this.optSiReunion.Size = new System.Drawing.Size(41, 25);
+            this.optSiReunion.TabIndex = 0;
+            this.optSiReunion.TabStop = true;
+            this.optSiReunion.Text = "Si";
+            this.optSiReunion.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // gboxReunion
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(41, 29);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(34, 17);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Si";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.gboxReunion.Controls.Add(this.optNoReunion);
+            this.gboxReunion.Controls.Add(this.optSiReunion);
+            this.gboxReunion.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gboxReunion.Location = new System.Drawing.Point(28, 148);
+            this.gboxReunion.Name = "gboxReunion";
+            this.gboxReunion.Size = new System.Drawing.Size(306, 100);
+            this.gboxReunion.TabIndex = 19;
+            this.gboxReunion.TabStop = false;
+            this.gboxReunion.Text = "Reunión";
             // 
-            // groupBox1
+            // lblDetalleDeActividad
             // 
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Location = new System.Drawing.Point(165, 135);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 100);
-            this.groupBox1.TabIndex = 19;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Reunion";
+            this.lblDetalleDeActividad.AutoSize = true;
+            this.lblDetalleDeActividad.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDetalleDeActividad.Location = new System.Drawing.Point(24, 114);
+            this.lblDetalleDeActividad.Name = "lblDetalleDeActividad";
+            this.lblDetalleDeActividad.Size = new System.Drawing.Size(124, 21);
+            this.lblDetalleDeActividad.TabIndex = 18;
+            this.lblDetalleDeActividad.Text = "Detalle actividad";
             // 
-            // label4
+            // cboTipoDeActividad
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(162, 100);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 13);
-            this.label4.TabIndex = 18;
-            this.label4.Text = "Detalle actividad";
+            this.cboTipoDeActividad.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboTipoDeActividad.FormattingEnabled = true;
+            this.cboTipoDeActividad.Items.AddRange(new object[] {
+            "Relevamiento",
+            "Diagnóstico",
+            "Análisis",
+            "Diagrama de base de datos",
+            "Programación"});
+            this.cboTipoDeActividad.Location = new System.Drawing.Point(174, 59);
+            this.cboTipoDeActividad.Name = "cboTipoDeActividad";
+            this.cboTipoDeActividad.Size = new System.Drawing.Size(160, 29);
+            this.cboTipoDeActividad.TabIndex = 17;
             // 
-            // comboBox1
+            // dtpFechaDeRegistro
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(206, 50);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 17;
+            this.dtpFechaDeRegistro.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFechaDeRegistro.Location = new System.Drawing.Point(174, 16);
+            this.dtpFechaDeRegistro.Name = "dtpFechaDeRegistro";
+            this.dtpFechaDeRegistro.Size = new System.Drawing.Size(160, 28);
+            this.dtpFechaDeRegistro.TabIndex = 15;
             // 
-            // label3
+            // lblTipoDeActividad
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(219, 411);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(423, 13);
-            this.label3.TabIndex = 16;
-            this.label3.Text = "Relevamient, propuesta, diagnostico, analisis, diagrama de base de datos, program" +
-    "acion";
+            this.lblTipoDeActividad.AutoSize = true;
+            this.lblTipoDeActividad.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipoDeActividad.Location = new System.Drawing.Point(24, 67);
+            this.lblTipoDeActividad.Name = "lblTipoDeActividad";
+            this.lblTipoDeActividad.Size = new System.Drawing.Size(127, 21);
+            this.lblTipoDeActividad.TabIndex = 14;
+            this.lblTipoDeActividad.Text = "Tipo de actividad";
             // 
-            // dateTimePicker1
+            // txtDetalleActividad
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(206, 5);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 15;
+            this.txtDetalleActividad.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDetalleActividad.Location = new System.Drawing.Point(174, 107);
+            this.txtDetalleActividad.Name = "txtDetalleActividad";
+            this.txtDetalleActividad.Size = new System.Drawing.Size(160, 28);
+            this.txtDetalleActividad.TabIndex = 13;
             // 
-            // label2
+            // lblFechaDeRegistro
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(159, 53);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 13);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "Tipo Actividad";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(206, 97);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 13;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(159, 5);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "label1";
+            this.lblFechaDeRegistro.AutoSize = true;
+            this.lblFechaDeRegistro.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechaDeRegistro.Location = new System.Drawing.Point(24, 22);
+            this.lblFechaDeRegistro.Name = "lblFechaDeRegistro";
+            this.lblFechaDeRegistro.Size = new System.Drawing.Size(129, 21);
+            this.lblFechaDeRegistro.TabIndex = 12;
+            this.lblFechaDeRegistro.Text = "Fecha de registro";
             // 
             // frmRegistrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(363, 438);
+            this.Controls.Add(this.btnCancelarRegistro);
+            this.Controls.Add(this.btnRegistrarRegistro);
+            this.Controls.Add(this.gboxTareas);
+            this.Controls.Add(this.gboxReunion);
+            this.Controls.Add(this.lblDetalleDeActividad);
+            this.Controls.Add(this.cboTipoDeActividad);
+            this.Controls.Add(this.dtpFechaDeRegistro);
+            this.Controls.Add(this.lblTipoDeActividad);
+            this.Controls.Add(this.txtDetalleActividad);
+            this.Controls.Add(this.lblFechaDeRegistro);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmRegistrar";
-            this.Text = "frmRegistrar";
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Registrar";
+            this.gboxTareas.ResumeLayout(false);
+            this.gboxTareas.PerformLayout();
+            this.gboxReunion.ResumeLayout(false);
+            this.gboxReunion.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnCancelarRegistro;
+        private System.Windows.Forms.CheckBox chkDebate;
+        private System.Windows.Forms.CheckBox chkNotasReunion;
+        private System.Windows.Forms.CheckBox chkInvestigacion;
+        private System.Windows.Forms.CheckBox chkRepositorio;
+        private System.Windows.Forms.Button btnRegistrarRegistro;
+        private System.Windows.Forms.GroupBox gboxTareas;
+        private System.Windows.Forms.RadioButton optNoReunion;
+        private System.Windows.Forms.RadioButton optSiReunion;
+        private System.Windows.Forms.GroupBox gboxReunion;
+        private System.Windows.Forms.Label lblDetalleDeActividad;
+        private System.Windows.Forms.ComboBox cboTipoDeActividad;
+        private System.Windows.Forms.DateTimePicker dtpFechaDeRegistro;
+        private System.Windows.Forms.Label lblTipoDeActividad;
+        private System.Windows.Forms.TextBox txtDetalleActividad;
+        private System.Windows.Forms.Label lblFechaDeRegistro;
     }
 }

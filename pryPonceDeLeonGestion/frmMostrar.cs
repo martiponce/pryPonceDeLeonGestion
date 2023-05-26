@@ -16,5 +16,12 @@ namespace pryPonceDeLeonGestion
         {
             InitializeComponent();
         }
+
+        private void btnVolverMostrar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmMain frm = new frmMain();
+            frm.Show();
+        }
     }
 }

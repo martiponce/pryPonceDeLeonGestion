@@ -16,5 +16,13 @@ namespace pryPonceDeLeonGestion
         {
             InitializeComponent();
         }
+
+        private void btnCancelarRegistro_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmMain f = new frmMain();
+            f.Show();
+                
+        }
     }
 }

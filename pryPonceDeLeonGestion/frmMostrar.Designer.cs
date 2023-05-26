@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMostrar));
             this.btnVolverMostrar = new System.Windows.Forms.Button();
             this.lstActividades = new System.Windows.Forms.ListBox();
             this.lblActividadMostrar = new System.Windows.Forms.Label();
@@ -36,13 +37,15 @@
             // 
             // btnVolverMostrar
             // 
+            this.btnVolverMostrar.BackColor = System.Drawing.SystemColors.Info;
             this.btnVolverMostrar.Location = new System.Drawing.Point(111, 388);
             this.btnVolverMostrar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnVolverMostrar.Name = "btnVolverMostrar";
             this.btnVolverMostrar.Size = new System.Drawing.Size(112, 37);
             this.btnVolverMostrar.TabIndex = 7;
             this.btnVolverMostrar.Text = "Volver";
-            this.btnVolverMostrar.UseVisualStyleBackColor = true;
+            this.btnVolverMostrar.UseVisualStyleBackColor = false;
+            this.btnVolverMostrar.Click += new System.EventHandler(this.btnVolverMostrar_Click);
             // 
             // lstActividades
             // 
@@ -83,6 +86,7 @@
             this.Controls.Add(this.lblActividadMostrar);
             this.Controls.Add(this.cboActividadMostrar);
             this.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmMostrar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
