@@ -51,11 +51,11 @@
             // 
             // btnCancelarRegistro
             // 
-            this.btnCancelarRegistro.BackColor = System.Drawing.SystemColors.Info;
+            this.btnCancelarRegistro.BackColor = System.Drawing.SystemColors.HighlightText;
             this.btnCancelarRegistro.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelarRegistro.Location = new System.Drawing.Point(150, 378);
+            this.btnCancelarRegistro.Location = new System.Drawing.Point(127, 381);
             this.btnCancelarRegistro.Name = "btnCancelarRegistro";
-            this.btnCancelarRegistro.Size = new System.Drawing.Size(85, 29);
+            this.btnCancelarRegistro.Size = new System.Drawing.Size(102, 31);
             this.btnCancelarRegistro.TabIndex = 21;
             this.btnCancelarRegistro.Text = "Cancelar";
             this.btnCancelarRegistro.UseVisualStyleBackColor = false;
@@ -103,11 +103,11 @@
             // 
             // btnRegistrarRegistro
             // 
-            this.btnRegistrarRegistro.BackColor = System.Drawing.SystemColors.Info;
+            this.btnRegistrarRegistro.BackColor = System.Drawing.SystemColors.HighlightText;
             this.btnRegistrarRegistro.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrarRegistro.Location = new System.Drawing.Point(249, 378);
+            this.btnRegistrarRegistro.Location = new System.Drawing.Point(240, 381);
             this.btnRegistrarRegistro.Name = "btnRegistrarRegistro";
-            this.btnRegistrarRegistro.Size = new System.Drawing.Size(77, 29);
+            this.btnRegistrarRegistro.Size = new System.Drawing.Size(94, 31);
             this.btnRegistrarRegistro.TabIndex = 22;
             this.btnRegistrarRegistro.Text = "Registar";
             this.btnRegistrarRegistro.UseVisualStyleBackColor = false;

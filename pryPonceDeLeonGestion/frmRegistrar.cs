@@ -37,7 +37,7 @@ namespace pryPonceDeLeonGestion
                 {
                     if (txtDetalleActividad.Text != "")
                     {
-                        MessageBox.Show("Vamos a grabar...");
+                        MessageBox.Show("Vamos a guardar :D", "Guardando...");
                     }
                     else
                     {
