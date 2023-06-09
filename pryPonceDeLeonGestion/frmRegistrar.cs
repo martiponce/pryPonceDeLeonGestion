@@ -32,12 +32,23 @@ namespace pryPonceDeLeonGestion
 
         private void btnRegistrarRegistro_Click(object sender, EventArgs e)
         {
+
+            int = i;
+            string[] vectorRegistarActividad = new string[];
             if (dtpFechaDeRegistro.Value >= DateTime.Today) {
                 if (cboTipoDeActividad.SelectedIndex != -1)
                 {
                     if (txtDetalleActividad.Text != "")
                     {
-                        MessageBox.Show("Vamos a guardar :D", "Guardando...");
+                        //MessageBox.Show("Vamos a guardar :D", "Guardando...");
+                        
+                        vectorRegistarActividad[i] =
+                            dtpFechaDeRegistro.Value +
+                            lblTipoDeActividad.Text
+                            txtDetalleActividad.Text;
+                            
+                            ;
+                        i++;
                     }
                     else
                     {

@@ -53,7 +53,7 @@
             // 
             this.btnCancelarRegistro.BackColor = System.Drawing.SystemColors.HighlightText;
             this.btnCancelarRegistro.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelarRegistro.Location = new System.Drawing.Point(127, 381);
+            this.btnCancelarRegistro.Location = new System.Drawing.Point(127, 397);
             this.btnCancelarRegistro.Name = "btnCancelarRegistro";
             this.btnCancelarRegistro.Size = new System.Drawing.Size(102, 31);
             this.btnCancelarRegistro.TabIndex = 21;
@@ -105,7 +105,7 @@
             // 
             this.btnRegistrarRegistro.BackColor = System.Drawing.SystemColors.HighlightText;
             this.btnRegistrarRegistro.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrarRegistro.Location = new System.Drawing.Point(240, 381);
+            this.btnRegistrarRegistro.Location = new System.Drawing.Point(240, 397);
             this.btnRegistrarRegistro.Name = "btnRegistrarRegistro";
             this.btnRegistrarRegistro.Size = new System.Drawing.Size(94, 31);
             this.btnRegistrarRegistro.TabIndex = 22;
@@ -120,7 +120,7 @@
             this.gboxTareas.Controls.Add(this.chkInvestigacion);
             this.gboxTareas.Controls.Add(this.chkRepositorio);
             this.gboxTareas.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gboxTareas.Location = new System.Drawing.Point(28, 255);
+            this.gboxTareas.Location = new System.Drawing.Point(28, 271);
             this.gboxTareas.Name = "gboxTareas";
             this.gboxTareas.Size = new System.Drawing.Size(306, 106);
             this.gboxTareas.TabIndex = 20;
@@ -154,7 +154,7 @@
             this.gboxReunion.Controls.Add(this.optNoReunion);
             this.gboxReunion.Controls.Add(this.optSiReunion);
             this.gboxReunion.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gboxReunion.Location = new System.Drawing.Point(28, 148);
+            this.gboxReunion.Location = new System.Drawing.Point(28, 164);
             this.gboxReunion.Name = "gboxReunion";
             this.gboxReunion.Size = new System.Drawing.Size(306, 100);
             this.gboxReunion.TabIndex = 19;
@@ -207,7 +207,7 @@
             // txtDetalleActividad
             // 
             this.txtDetalleActividad.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDetalleActividad.Location = new System.Drawing.Point(174, 107);
+            this.txtDetalleActividad.Location = new System.Drawing.Point(174, 111);
             this.txtDetalleActividad.Name = "txtDetalleActividad";
             this.txtDetalleActividad.Size = new System.Drawing.Size(160, 28);
             this.txtDetalleActividad.TabIndex = 13;
@@ -226,7 +226,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(363, 438);
+            this.ClientSize = new System.Drawing.Size(365, 451);
             this.Controls.Add(this.btnCancelarRegistro);
             this.Controls.Add(this.btnRegistrarRegistro);
             this.Controls.Add(this.gboxTareas);

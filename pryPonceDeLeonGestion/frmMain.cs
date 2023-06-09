@@ -22,6 +22,8 @@ namespace pryPonceDeLeonGestion
             this.Hide();
             frmRegistrar f = new frmRegistrar();
             f.ShowDialog();
+
+        
         }
 
         private void btnMostrar_Click(object sender, EventArgs e)
