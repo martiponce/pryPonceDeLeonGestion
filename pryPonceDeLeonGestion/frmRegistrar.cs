@@ -24,5 +24,40 @@ namespace pryPonceDeLeonGestion
             f.Show();
                 
         }
+
+        private void frmRegistrar_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRegistrarRegistro_Click(object sender, EventArgs e)
+        {
+            if (dtpFechaDeRegistro.Value >= DateTime.Today) {
+                if (cboTipoDeActividad.SelectedIndex != -1)
+                {
+                    if (txtDetalleActividad.Text != "")
+                    {
+                        MessageBox.Show("Vamos a grabar...");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Te falta detallar la actividad pichón", "Detelle de Actividad", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        txtDetalleActividad.Focus();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Seleccione ua actividad >:c", "Seleciòn Actividad", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    cboTipoDeActividad.Focus();
+                }
+            }
+            else
+            {                        // mensaje                       -nombre de la ventana   -boton de la vent   -icono de ventana
+                MessageBox.Show("Seleciona una fecha de hoy en adelante","Carga de Tareas", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                dtpFechaDeRegistro.Value = DateTime.Today;
+                dtpFechaDeRegistro.Focus();
+            }
+
+        }
     }
 }

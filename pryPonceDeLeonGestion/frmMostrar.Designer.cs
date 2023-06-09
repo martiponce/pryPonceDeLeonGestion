@@ -37,7 +37,7 @@
             // 
             // btnVolverMostrar
             // 
-            this.btnVolverMostrar.BackColor = System.Drawing.SystemColors.Info;
+            this.btnVolverMostrar.BackColor = System.Drawing.SystemColors.HighlightText;
             this.btnVolverMostrar.Location = new System.Drawing.Point(111, 388);
             this.btnVolverMostrar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnVolverMostrar.Name = "btnVolverMostrar";

@@ -37,7 +37,7 @@
             // lblMisActividades
             // 
             this.lblMisActividades.AutoSize = true;
-            this.lblMisActividades.BackColor = System.Drawing.SystemColors.Info;
+            this.lblMisActividades.BackColor = System.Drawing.SystemColors.HighlightText;
             this.lblMisActividades.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMisActividades.Location = new System.Drawing.Point(46, 20);
             this.lblMisActividades.Name = "lblMisActividades";
@@ -47,13 +47,13 @@
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.BackColor = System.Drawing.SystemColors.Info;
-            this.btnRegistrar.FlatAppearance.BorderColor = System.Drawing.Color.Moccasin;
+            this.btnRegistrar.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.btnRegistrar.FlatAppearance.BorderColor = System.Drawing.Color.Peru;
             this.btnRegistrar.FlatAppearance.BorderSize = 5;
             this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrar.Location = new System.Drawing.Point(21, 72);
+            this.btnRegistrar.Location = new System.Drawing.Point(24, 67);
             this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(88, 31);
+            this.btnRegistrar.Size = new System.Drawing.Size(94, 33);
             this.btnRegistrar.TabIndex = 2;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = false;
@@ -61,11 +61,11 @@
             // 
             // btnMostrar
             // 
-            this.btnMostrar.BackColor = System.Drawing.SystemColors.Info;
+            this.btnMostrar.BackColor = System.Drawing.SystemColors.HighlightText;
             this.btnMostrar.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMostrar.Location = new System.Drawing.Point(151, 72);
+            this.btnMostrar.Location = new System.Drawing.Point(139, 67);
             this.btnMostrar.Name = "btnMostrar";
-            this.btnMostrar.Size = new System.Drawing.Size(88, 31);
+            this.btnMostrar.Size = new System.Drawing.Size(94, 33);
             this.btnMostrar.TabIndex = 2;
             this.btnMostrar.Text = "Mostrar";
             this.btnMostrar.UseVisualStyleBackColor = false;

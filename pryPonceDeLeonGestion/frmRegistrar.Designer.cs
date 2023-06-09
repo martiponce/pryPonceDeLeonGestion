@@ -53,7 +53,7 @@
             // 
             this.btnCancelarRegistro.BackColor = System.Drawing.SystemColors.Info;
             this.btnCancelarRegistro.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelarRegistro.Location = new System.Drawing.Point(194, 378);
+            this.btnCancelarRegistro.Location = new System.Drawing.Point(150, 378);
             this.btnCancelarRegistro.Name = "btnCancelarRegistro";
             this.btnCancelarRegistro.Size = new System.Drawing.Size(85, 29);
             this.btnCancelarRegistro.TabIndex = 21;
@@ -105,12 +105,13 @@
             // 
             this.btnRegistrarRegistro.BackColor = System.Drawing.SystemColors.Info;
             this.btnRegistrarRegistro.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrarRegistro.Location = new System.Drawing.Point(94, 378);
+            this.btnRegistrarRegistro.Location = new System.Drawing.Point(249, 378);
             this.btnRegistrarRegistro.Name = "btnRegistrarRegistro";
             this.btnRegistrarRegistro.Size = new System.Drawing.Size(77, 29);
             this.btnRegistrarRegistro.TabIndex = 22;
             this.btnRegistrarRegistro.Text = "Registar";
             this.btnRegistrarRegistro.UseVisualStyleBackColor = false;
+            this.btnRegistrarRegistro.Click += new System.EventHandler(this.btnRegistrarRegistro_Click);
             // 
             // gboxTareas
             // 
@@ -240,6 +241,7 @@
             this.Name = "frmRegistrar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registrar";
+            this.Load += new System.EventHandler(this.frmRegistrar_Load);
             this.gboxTareas.ResumeLayout(false);
             this.gboxTareas.PerformLayout();
             this.gboxReunion.ResumeLayout(false);
