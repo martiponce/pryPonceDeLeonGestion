@@ -23,5 +23,10 @@ namespace pryPonceDeLeonGestion
             frmMain frm = new frmMain();
             frm.Show();
         }
+
+        private void frmMostrar_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

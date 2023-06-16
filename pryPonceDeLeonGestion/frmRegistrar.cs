@@ -33,21 +33,37 @@ namespace pryPonceDeLeonGestion
         private void btnRegistrarRegistro_Click(object sender, EventArgs e)
         {
 
-            int = i;
-            string[] vectorRegistarActividad = new string[];
+            
+            string[] vectorRegistarActividad = new string[10];
+
+            string reunion, datoConcatenado; 
+
+            if (optSiReunion.Checked = true)
+            {
+                reunion = "hay reunion";
+            }
+            else
+            {
+                reunion = "no hay reunion";
+            }
+
+            datoConcatenado =
+                            dtpFechaDeRegistro.Value + ", " +
+                            lblTipoDeActividad.Text + ", " +
+                            txtDetalleActividad.Text + ", " +
+                            reunion;
+
             if (dtpFechaDeRegistro.Value >= DateTime.Today) {
                 if (cboTipoDeActividad.SelectedIndex != -1)
                 {
                     if (txtDetalleActividad.Text != "")
                     {
                         //MessageBox.Show("Vamos a guardar :D", "Guardando...");
-                        
-                        vectorRegistarActividad[i] =
-                            dtpFechaDeRegistro.Value +
-                            lblTipoDeActividad.Text
-                            txtDetalleActividad.Text;
-                            
-                            ;
+                        int i;
+                        i = 0;
+
+                        vectorRegistarActividad[i] = datoConcatenado;
+               
                         i++;
                     }
                     else

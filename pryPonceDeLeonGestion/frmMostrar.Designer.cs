@@ -42,7 +42,7 @@
             this.btnVolverMostrar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnVolverMostrar.Name = "btnVolverMostrar";
             this.btnVolverMostrar.Size = new System.Drawing.Size(112, 37);
-            this.btnVolverMostrar.TabIndex = 7;
+            this.btnVolverMostrar.TabIndex = 2;
             this.btnVolverMostrar.Text = "Volver";
             this.btnVolverMostrar.UseVisualStyleBackColor = false;
             this.btnVolverMostrar.Click += new System.EventHandler(this.btnVolverMostrar_Click);
@@ -55,7 +55,7 @@
             this.lstActividades.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lstActividades.Name = "lstActividades";
             this.lstActividades.Size = new System.Drawing.Size(287, 298);
-            this.lstActividades.TabIndex = 6;
+            this.lstActividades.TabIndex = 1;
             // 
             // lblActividadMostrar
             // 
@@ -74,7 +74,7 @@
             this.cboActividadMostrar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cboActividadMostrar.Name = "cboActividadMostrar";
             this.cboActividadMostrar.Size = new System.Drawing.Size(180, 29);
-            this.cboActividadMostrar.TabIndex = 4;
+            this.cboActividadMostrar.TabIndex = 0;
             // 
             // frmMostrar
             // 
@@ -91,6 +91,7 @@
             this.Name = "frmMostrar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mostrar Actividad";
+            this.Load += new System.EventHandler(this.frmMostrar_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

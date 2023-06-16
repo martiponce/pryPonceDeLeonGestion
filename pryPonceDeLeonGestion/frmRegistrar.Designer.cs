@@ -56,7 +56,7 @@
             this.btnCancelarRegistro.Location = new System.Drawing.Point(127, 397);
             this.btnCancelarRegistro.Name = "btnCancelarRegistro";
             this.btnCancelarRegistro.Size = new System.Drawing.Size(102, 31);
-            this.btnCancelarRegistro.TabIndex = 21;
+            this.btnCancelarRegistro.TabIndex = 4;
             this.btnCancelarRegistro.Text = "Cancelar";
             this.btnCancelarRegistro.UseVisualStyleBackColor = false;
             this.btnCancelarRegistro.Click += new System.EventHandler(this.btnCancelarRegistro_Click);
@@ -108,7 +108,7 @@
             this.btnRegistrarRegistro.Location = new System.Drawing.Point(240, 397);
             this.btnRegistrarRegistro.Name = "btnRegistrarRegistro";
             this.btnRegistrarRegistro.Size = new System.Drawing.Size(94, 31);
-            this.btnRegistrarRegistro.TabIndex = 22;
+            this.btnRegistrarRegistro.TabIndex = 3;
             this.btnRegistrarRegistro.Text = "Registar";
             this.btnRegistrarRegistro.UseVisualStyleBackColor = false;
             this.btnRegistrarRegistro.Click += new System.EventHandler(this.btnRegistrarRegistro_Click);
@@ -184,7 +184,7 @@
             this.cboTipoDeActividad.Location = new System.Drawing.Point(174, 59);
             this.cboTipoDeActividad.Name = "cboTipoDeActividad";
             this.cboTipoDeActividad.Size = new System.Drawing.Size(160, 29);
-            this.cboTipoDeActividad.TabIndex = 17;
+            this.cboTipoDeActividad.TabIndex = 1;
             // 
             // dtpFechaDeRegistro
             // 
@@ -192,7 +192,7 @@
             this.dtpFechaDeRegistro.Location = new System.Drawing.Point(174, 16);
             this.dtpFechaDeRegistro.Name = "dtpFechaDeRegistro";
             this.dtpFechaDeRegistro.Size = new System.Drawing.Size(160, 28);
-            this.dtpFechaDeRegistro.TabIndex = 15;
+            this.dtpFechaDeRegistro.TabIndex = 0;
             // 
             // lblTipoDeActividad
             // 
@@ -210,7 +210,7 @@
             this.txtDetalleActividad.Location = new System.Drawing.Point(174, 111);
             this.txtDetalleActividad.Name = "txtDetalleActividad";
             this.txtDetalleActividad.Size = new System.Drawing.Size(160, 28);
-            this.txtDetalleActividad.TabIndex = 13;
+            this.txtDetalleActividad.TabIndex = 2;
             // 
             // lblFechaDeRegistro
             // 
