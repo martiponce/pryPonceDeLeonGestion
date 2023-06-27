@@ -36,22 +36,46 @@ namespace pryPonceDeLeonGestion
             
             string[] vectorRegistarActividad = new string[10];
 
-            string reunion, datoConcatenado; 
+            string reunion, datoConcatenado,tareaConcatenada = ""; 
 
-            if (optSiReunion.Checked = true)
+            if (optSiReunion.Checked == true)
             {
-                reunion = "hay reunion";
+                reunion = "Hay reunion";
             }
             else
             {
-                reunion = "no hay reunion";
+                reunion = "No hay reunion";
             }
+
+            if (chkRepositorio.Checked == true)
+            {
+              
+                tareaConcatenada+= "Repositorio, ";
+            }
+
+            if (chkInvestigacion.Checked == true)
+            {
+                
+                tareaConcatenada += "Investigación, ";
+            }
+
+            if (chkNotasReunion.Checked == true)
+            {
+                
+                tareaConcatenada += "Notas reunión, ";
+            }
+            if (chkDebate.Checked == true)
+            {
+
+                tareaConcatenada += "Debate, ";
+            }
+
 
             datoConcatenado =
                             dtpFechaDeRegistro.Value + ", " +
                             lblTipoDeActividad.Text + ", " +
                             txtDetalleActividad.Text + ", " +
-                            reunion;
+                            reunion + tareaConcatenada;
 
             if (dtpFechaDeRegistro.Value >= DateTime.Today) {
                 if (cboTipoDeActividad.SelectedIndex != -1)
@@ -62,7 +86,7 @@ namespace pryPonceDeLeonGestion
                         int i;
                         i = 0;
 
-                        vectorRegistarActividad[i] = datoConcatenado;
+                       vectorRegistarActividad[i] = datoConcatenado;
                
                         i++;
                     }
@@ -85,6 +109,9 @@ namespace pryPonceDeLeonGestion
                 dtpFechaDeRegistro.Focus();
             }
 
-        }
+            
+
+
     }
+}
 }

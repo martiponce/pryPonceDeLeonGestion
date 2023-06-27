@@ -28,5 +28,10 @@ namespace pryPonceDeLeonGestion
         {
 
         }
+
+        private void cboActividadMostrar_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cboActividadMostrar.Items.Add(datoConcatenado);
+        }
     }
 }

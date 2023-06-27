@@ -75,6 +75,7 @@
             this.cboActividadMostrar.Name = "cboActividadMostrar";
             this.cboActividadMostrar.Size = new System.Drawing.Size(180, 29);
             this.cboActividadMostrar.TabIndex = 0;
+            this.cboActividadMostrar.SelectedIndexChanged += new System.EventHandler(this.cboActividadMostrar_SelectedIndexChanged);
             // 
             // frmMostrar
             // 
