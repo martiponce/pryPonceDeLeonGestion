@@ -49,6 +49,9 @@
             // 
             // lstActividades
             // 
+            this.lstActividades.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lstActividades.FormattingEnabled = true;
             this.lstActividades.ItemHeight = 21;
             this.lstActividades.Location = new System.Drawing.Point(22, 71);
@@ -70,6 +73,12 @@
             // cboActividadMostrar
             // 
             this.cboActividadMostrar.FormattingEnabled = true;
+            this.cboActividadMostrar.Items.AddRange(new object[] {
+            "Relevamiento",
+            "Diagnóstico",
+            "Análisis",
+            "Diagrama de base de datos",
+            "Programación"});
             this.cboActividadMostrar.Location = new System.Drawing.Point(129, 17);
             this.cboActividadMostrar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cboActividadMostrar.Name = "cboActividadMostrar";
@@ -81,6 +90,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(332, 438);
             this.Controls.Add(this.btnVolverMostrar);
             this.Controls.Add(this.lstActividades);

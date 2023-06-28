@@ -12,10 +12,14 @@ namespace pryPonceDeLeonGestion
 {
     public partial class frmRegistrar : Form
     {
+        public string[] vectorRegistarActividad = new string[10];
+        int i = 0;
         public frmRegistrar()
         {
+
             InitializeComponent();
-        }
+            
+    }
 
         private void btnCancelarRegistro_Click(object sender, EventArgs e)
         {
@@ -29,22 +33,59 @@ namespace pryPonceDeLeonGestion
         {
 
         }
+        void limpiar()
+        {
+            dtpFechaDeRegistro.Value = DateTime.Today;
+            txtDetalleActividad.Text = " ";
+            cboTipoDeActividad.Text = "";
+
+            if (optSiReunion.Checked == true)
+            {
+                optSiReunion.Checked = false;
+            }
+            else
+            {
+                optNoReunion.Checked = false;
+            }     
+
+            if (chkRepositorio.Checked == true)
+            {
+
+                chkRepositorio.Checked = false;
+            }
+
+            if (chkInvestigacion.Checked == true)
+            {
+
+                chkInvestigacion.Checked = false;
+            }
+
+            if (chkNotasReunion.Checked == true)
+            {
+
+                chkNotasReunion.Checked = false;
+            }
+            if (chkDebate.Checked == true)
+            {
+
+                chkDebate.Checked = false;
+            }
+
+
+        }
 
         private void btnRegistrarRegistro_Click(object sender, EventArgs e)
         {
-
-            
-            string[] vectorRegistarActividad = new string[10];
 
             string reunion, datoConcatenado,tareaConcatenada = ""; 
 
             if (optSiReunion.Checked == true)
             {
-                reunion = "Hay reunion";
+                reunion = "Hay reunión";
             }
             else
             {
-                reunion = "No hay reunion";
+                reunion = "No hay reunión";
             }
 
             if (chkRepositorio.Checked == true)
@@ -82,11 +123,10 @@ namespace pryPonceDeLeonGestion
                 {
                     if (txtDetalleActividad.Text != "")
                     {
-                        //MessageBox.Show("Vamos a guardar :D", "Guardando...");
-                        int i;
-                        i = 0;
+                        
+                        
 
-                       vectorRegistarActividad[i] = datoConcatenado;
+                        vectorRegistarActividad[i] = datoConcatenado;
                
                         i++;
                     }
@@ -98,7 +138,7 @@ namespace pryPonceDeLeonGestion
                 }
                 else
                 {
-                    MessageBox.Show("Seleccione ua actividad >:c", "Seleciòn Actividad", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Seleccione una actividad >:c", "Seleciòn Actividad", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     cboTipoDeActividad.Focus();
                 }
             }
@@ -109,9 +149,30 @@ namespace pryPonceDeLeonGestion
                 dtpFechaDeRegistro.Focus();
             }
 
-            
+            limpiar();
+
 
 
     }
-}
+
+        private void btnMostrar_Click(object sender, EventArgs e)
+        {
+
+            //creo al ventana y en la ventana muestro el vector hecho
+            frmMostrar fMostra = new frmMostrar();
+
+            for (int i = 0; i < vectorRegistarActividad.Length; i++)
+            {
+                fMostra.vectorRegistarActividad[i] = vectorRegistarActividad[i];
+
+            }
+
+            fMostra.ShowDialog();
+        }
+
+        private void cboTipoDeActividad_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

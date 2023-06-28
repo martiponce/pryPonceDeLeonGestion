@@ -12,6 +12,7 @@ namespace pryPonceDeLeonGestion
 {
     public partial class frmMostrar : Form
     {
+        public string[] vectorRegistarActividad = new string[10];
         public frmMostrar()
         {
             InitializeComponent();
@@ -26,12 +27,24 @@ namespace pryPonceDeLeonGestion
 
         private void frmMostrar_Load(object sender, EventArgs e)
         {
-
+            for (int i = 0; i < vectorRegistarActividad.Length; i++)
+            {
+                if (vectorRegistarActividad[i] != null)
+                {
+                    lstActividades.Items.Add(vectorRegistarActividad[i]);
+                }
+                
+            }
         }
 
         private void cboActividadMostrar_SelectedIndexChanged(object sender, EventArgs e)
         {
-            cboActividadMostrar.Items.Add(datoConcatenado);
+
+       
+            //if (cboActividadMostrar.SelectedIndex = vectorRegistarActividad[cboTipoActividad])
+            //{
+               
+            //}
         }
     }
 }

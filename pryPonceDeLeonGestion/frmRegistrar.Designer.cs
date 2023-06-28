@@ -45,6 +45,7 @@
             this.lblTipoDeActividad = new System.Windows.Forms.Label();
             this.txtDetalleActividad = new System.Windows.Forms.TextBox();
             this.lblFechaDeRegistro = new System.Windows.Forms.Label();
+            this.btnMostrar = new System.Windows.Forms.Button();
             this.gboxTareas.SuspendLayout();
             this.gboxReunion.SuspendLayout();
             this.SuspendLayout();
@@ -53,11 +54,11 @@
             // 
             this.btnCancelarRegistro.BackColor = System.Drawing.SystemColors.HighlightText;
             this.btnCancelarRegistro.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelarRegistro.Location = new System.Drawing.Point(127, 397);
+            this.btnCancelarRegistro.Location = new System.Drawing.Point(12, 397);
             this.btnCancelarRegistro.Name = "btnCancelarRegistro";
             this.btnCancelarRegistro.Size = new System.Drawing.Size(102, 31);
             this.btnCancelarRegistro.TabIndex = 4;
-            this.btnCancelarRegistro.Text = "Cancelar";
+            this.btnCancelarRegistro.Text = "Volver";
             this.btnCancelarRegistro.UseVisualStyleBackColor = false;
             this.btnCancelarRegistro.Click += new System.EventHandler(this.btnCancelarRegistro_Click);
             // 
@@ -105,7 +106,7 @@
             // 
             this.btnRegistrarRegistro.BackColor = System.Drawing.SystemColors.HighlightText;
             this.btnRegistrarRegistro.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrarRegistro.Location = new System.Drawing.Point(240, 397);
+            this.btnRegistrarRegistro.Location = new System.Drawing.Point(259, 397);
             this.btnRegistrarRegistro.Name = "btnRegistrarRegistro";
             this.btnRegistrarRegistro.Size = new System.Drawing.Size(94, 31);
             this.btnRegistrarRegistro.TabIndex = 3;
@@ -185,6 +186,7 @@
             this.cboTipoDeActividad.Name = "cboTipoDeActividad";
             this.cboTipoDeActividad.Size = new System.Drawing.Size(160, 29);
             this.cboTipoDeActividad.TabIndex = 1;
+            this.cboTipoDeActividad.SelectedIndexChanged += new System.EventHandler(this.cboTipoDeActividad_SelectedIndexChanged);
             // 
             // dtpFechaDeRegistro
             // 
@@ -222,11 +224,24 @@
             this.lblFechaDeRegistro.TabIndex = 12;
             this.lblFechaDeRegistro.Text = "Fecha de registro";
             // 
+            // btnMostrar
+            // 
+            this.btnMostrar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnMostrar.Font = new System.Drawing.Font("Microsoft Tai Le", 12F);
+            this.btnMostrar.Location = new System.Drawing.Point(132, 397);
+            this.btnMostrar.Name = "btnMostrar";
+            this.btnMostrar.Size = new System.Drawing.Size(102, 31);
+            this.btnMostrar.TabIndex = 21;
+            this.btnMostrar.Text = "Mostrar";
+            this.btnMostrar.UseVisualStyleBackColor = false;
+            this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
+            // 
             // frmRegistrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(365, 451);
+            this.Controls.Add(this.btnMostrar);
             this.Controls.Add(this.btnCancelarRegistro);
             this.Controls.Add(this.btnRegistrarRegistro);
             this.Controls.Add(this.gboxTareas);
@@ -268,5 +283,6 @@
         private System.Windows.Forms.Label lblTipoDeActividad;
         private System.Windows.Forms.TextBox txtDetalleActividad;
         private System.Windows.Forms.Label lblFechaDeRegistro;
+        private System.Windows.Forms.Button btnMostrar;
     }
 }
